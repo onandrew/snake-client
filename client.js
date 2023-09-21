@@ -5,10 +5,16 @@ const connect = function () {
     port: 50541,
   });
 
+  conn.on('connect', (connect) => {
+    console.log('Connection established');
+  });
+
+  conn.on('connect', (connect) => {
+    conn.write(`Name: AON`);
+  });
   // interpret incoming data as text
-  conn.on("connect", () => {
-    // code that does something when the connection is first established
-    console.log("you ded cuz you idled");
+  conn.on("data", (data) => {
+    console.log("Idled too long so you have been disconnected");
   });
 
   conn.setEncoding("utf8");
