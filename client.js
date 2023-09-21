@@ -9,9 +9,7 @@ const connect = function () {
     console.log('Connection established');
   });
 
-  conn.on('connect', (connect) => {
-    conn.write(`Name: AON`);
-  });
+
   // interpret incoming data as text
   conn.on("data", (data) => {
     console.log("Idled too long so you have been disconnected");
