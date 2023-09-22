@@ -1,4 +1,6 @@
 let connection;
+const message = "Say: ";
+const helloMessage = "Hello";
 
 const setupInput = function (conn) {
   connection = conn;
@@ -18,8 +20,10 @@ const setupInput = function (conn) {
     conn.write('Move: down');
   } else if (key === 'd') {
     conn.write('Move: right');
+  } else if (key === 'h'){
+    conn.write(message + helloMessage);
   }
-  };
+  } ;
   stdin.on('data', (data) => {
     handleUserInput(data);
   });
