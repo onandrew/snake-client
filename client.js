@@ -9,9 +9,9 @@ const connect = function () {
   });
   conn.on('connect', () => {
     conn.write(`Name: AON`);
-});
+  });
    // conn.write(`Move: up`);
-    conn.on('data', (data) => {
+   conn.on('data', (data) => {
       console.log('Server says: ', data);
       console.log("Idled too long so you have been disconnected");
   });
