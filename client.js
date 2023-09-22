@@ -7,19 +7,18 @@ const connect = function () {
 
   conn.on('connect', (connect) => {
     console.log('Connection established');
-  });
-  conn.on('connect', (connect) => {
     conn.write(`Name: AON`);
+   // conn.write(`Move: up`);
+    conn.on('data', (data) => {
+      console.log('Server says: ', data);
+      console.log("Idled too long so you have been disconnected");
+    });
   });
-
   // interpret incoming data as text
-  conn.on("data", (data) => {
-    console.log("Idled too long so you have been disconnected");
-  });
 
   conn.setEncoding("utf8");
 
   return conn;
 };
 
-  module.exports = {connect, net};
+  module.exports = {connect};
