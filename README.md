@@ -8,7 +8,7 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Final Product
 
-!(C:\Users\A\OneDrive\Documents\Andrew\LHL\snakegame.png)
+![image](https://github.com/onandrew/snake-client/assets/137456118/d813157e-11da-4200-89d0-4efb6ae5fd5f)
 
 
 ## Getting Started
