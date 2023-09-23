@@ -21,10 +21,10 @@ const setupInput = function (conn) {
     conn.write('Move: down');
   } else if (key === MOVE_RIGHT_KEY) {
     conn.write('Move: right');
-  } else if (key === 'h'){
+  } else if (key === 'h') {
     conn.write(message + helloMessage);
   }
-  } ;
+  };
   stdin.on('data', (data) => {
     handleUserInput(data);
   });
