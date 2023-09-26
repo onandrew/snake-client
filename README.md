@@ -8,10 +8,25 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Final Product
 
-!(C:\Users\A\OneDrive\Documents\Andrew\LHL\snakegame.png)
+!(https://github.com/onandrew/snake-client/assets/137456118/03094b69-533c-4eb0-97ee-6fee33e8ce91)
 
 
 ## Getting Started
 
-- Follow steps inside the snek server repo to run the server side
+- You will need to navigate over and clone the server code locally. The server code is found here. https://github.com/     lighthouse-labs/snek-multiplayer
+- Follow steps inside, or pasted below, the snek server repo to run the server side
+git clone https://github.com/lighthouse-labs/snek-multiplayer.git
+cd snek-multiplayer
+npm install
+npm run play
 - Run the development snake client using the `node play.js` command.
+
+## Acknowledgements
+
+- This game is based off of [the original](https://www.taniarascia.com/snake-game-in-javascript/) by Tania Rascia
+
+## Playing the game
+
+- Use the WASD keys to move the snake around. Avoid crashing the snake into itself or the walls. The goal is to eat the 'food' in order to grow as large as possible
+- You can say hello by pressing the H key
+- To leave the game, press ctrl + C

@@ -3,13 +3,7 @@ const message = "Say: ";
 const helloMessage = "Hello";
 const { MOVE_UP_KEY, MOVE_LEFT_KEY, MOVE_DOWN_KEY, MOVE_RIGHT_KEY} = require('./constants');
 
-const setupInput = function (conn) {
-  connection = conn;
-  const stdin = process.stdin;
-  stdin.setRawMode(true);
-  stdin.setEncoding("utf8");
-  stdin.resume();
-  const handleUserInput = function (key) {
+const handleUserInput = function (key) {
   if (key === '\u0003') {
     process.exit();
   }
@@ -25,6 +19,13 @@ const setupInput = function (conn) {
     conn.write(message + helloMessage);
   }
   };
+
+const setupInput = function (conn) {
+  connection = conn;
+  const stdin = process.stdin;
+  stdin.setRawMode(true);
+  stdin.setEncoding("utf8");
+  stdin.resume();
   stdin.on('data', (data) => {
     handleUserInput(data);
   });
