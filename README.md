@@ -12,11 +12,11 @@ This is simply a multiplayer take on the genre.
 ## Getting Started
 
 - You will need to navigate over and clone the server code locally. The server code is found here. https://github.com/lighthouse-labs/snek-multiplayer
-- Follow steps inside, or pasted below, the snek server repo to run the server side
-git clone https://github.com/lighthouse-labs/snek-multiplayer.git
-cd snek-multiplayer
-npm install
-npm run play
+- Follow steps inside, or pasted below, the snek server repo to run the server side <br>
+git clone https://github.com/lighthouse-labs/snek-multiplayer.git <br>
+cd snek-multiplayer <br>
+npm install <br>
+npm run play <br>
 - Run the development snake client using the `node play.js` command.
 
 ## Acknowledgement
