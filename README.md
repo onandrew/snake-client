@@ -4,19 +4,27 @@ Snake game is a very popular video game. It is a video game concept where the pl
 
 This is simply a multiplayer take on the genre.
 
-Before you can run this client, you will need to be running the server side which you can download and install from here. 
-
 ## Final Product
 
-!(https://github.com/onandrew/snake-client/assets/137456118/03094b69-533c-4eb0-97ee-6fee33e8ce91)
+![](https://github.com/onandrew/snake-client/assets/137456118/03094b69-533c-4eb0-97ee-6fee33e8ce91)
 
 
 ## Getting Started
 
-- You will need to navigate over and clone the server code locally. The server code is found here. https://github.com/     lighthouse-labs/snek-multiplayer
+- You will need to navigate over and clone the server code locally. The server code is found here. https://github.com/lighthouse-labs/snek-multiplayer
 - Follow steps inside, or pasted below, the snek server repo to run the server side
 git clone https://github.com/lighthouse-labs/snek-multiplayer.git
 cd snek-multiplayer
 npm install
 npm run play
 - Run the development snake client using the `node play.js` command.
+
+## Acknowledgement
+
+- This game is based off [the original](https://github.com/taniarascia/snek) by Tania Rascia
+
+## Playing the game
+
+- This game uses WASD commands. Use these keys to move the snake around and collect the 'food'. Avoid crashing the snake into itself or the walls or it's game over!
+- You can press H to say hello
+- To exit the game, press ctrl + C
