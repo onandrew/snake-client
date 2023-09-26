@@ -20,13 +20,3 @@ cd snek-multiplayer
 npm install
 npm run play
 - Run the development snake client using the `node play.js` command.
-
-## Acknowledgements
-
-- This game is based off of [the original](https://www.taniarascia.com/snake-game-in-javascript/) by Tania Rascia
-
-## Playing the game
-
-- Use the WASD keys to move the snake around. Avoid crashing the snake into itself or the walls. The goal is to eat the 'food' in order to grow as large as possible
-- You can say hello by pressing the H key
-- To leave the game, press ctrl + C
