@@ -4,7 +4,7 @@ const helloMessage = "Hello";
 const { MOVE_UP_KEY, MOVE_LEFT_KEY, MOVE_DOWN_KEY, MOVE_RIGHT_KEY} = require('./constants');
 
 const handleUserInput = function (key) {
-  connection = conn;
+  conn = connection;
   if (key === '\u0003') {
     process.exit();
   }
